@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Aprendendo com o Gustavo Guanabara</title>
+</head>
+<body>
+    <h1>Mídias em HTML5</h1>
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes
+        ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+
+    <picture><!--A orden dos SOURCES é importante, se a ordem estiver errado a tag não vai funcionar como deveria.-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem grande flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reprozudir áudios em HTML5.</p>
+    <audio src="midia/brasil-sil-sil-rede-globo.mp3" controls autoplay></audio>
+    <!--Quase todos os navegadores são compatíveis com esses formatos de áudio: MP3 WAV OGG-->
+    <audio preload="metadata"><!--METADATA = Vai carregar o nome do arquivo e algumas informações como data e duração. NONE não carrega nada e AUTO a página vai esperar carregar todos os arquivos de áudio antes de ser considreda carregada. O que pode fazer com que a página demore muito para carregar, pricipalmente se os arquivos de áudio forem pesados, tipo 30mb que para um celular é muita coisa.-->
+        <source src="midia/brasil-sil-sil-rede-globo.mp3" type="audio/mpeg"><!--A ordem dos SOURCES é importante aqui também, igual na tag PICTURE.-->
+        <source src="midia/brasil-sil-sil-rede-globo.ogg" type="audio/ogg"><!--Esse TYPE é o media type dos arquivos, audio/mpeg para MP3, audio/ogg para OGG e audio/wav para WAV.-->
+        <source src="midia/brasil-sil-sil-rede-globo.wav" type="audio/wav">
+        <p>Seu navegador não tem compatibilidade com reprodução de áudios.</p><!--É como um array, o navegador vai tentar reproduzir as tags na ordem, primeiro o mpeg e por último a tag P, o primeiro que ele conseguir ele para. Se o navegador não for compatível ocm nenhum desses formatos de áudio, ele vai mostrar a mensagem na tag P-->
+    </audio><!--MP3 e OGG são melhores pois são formatos que deixa o peso do arquivo menor (tem qualidade de áudio inferior a WAV). WAV é de uma qualidade auditiva melhor, porém é mais pesado o tamanho dos arquivos.-->
+</body><!--Mas para site MP3 e OGG são melhores, se o usuário quiser um arquivo com alta qualidade é melhor baixar um. Para reproduzir na página tem que ser algo leve para não pesar.-->
+</html> 

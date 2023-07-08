@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Aprendendo com o Gustavo Guanabara</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <h3>Com a tag CODE</h3>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <h3>Sem a tag CODE</h3>
+    <p>O comando document.getElementById('teste') é escrito em linguagem JavaScript.</p>
+    <p><mark>A tag CODE altera o espaço reservado para cada caracter em uma fonte, deixando todos com o mesmo tamanho / espaçamento.</mark></p>
+    <pre>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR')
+            else:
+                print(f'O número {num} é IMPAR')
+        </code>
+    </pre>
+    <h2>Citaçõoes</h2>
+    <p>Como diria um pai de uma amigo: <q>o computador é um burro muito rápido</q>.</p> <!-- A tag Q é de quote / citação.-->
+    <h2>Citações completas</h2>
+    <p>Textos e exercício baseado no vídeo aula do Gustavo Guanabara.
+        <blockquote cite="https://www.youtube.com/watch?v=4ynvsrkamt8&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=24">
+            Sendo mais específico, no vídeo "Citações e Códigos - @Curso em Vídeo HTML5 e CSS3".
+        </blockquote></p> <!-- A tag blockquote serve para inserir o link da onde a citação foi tirada, ela não faz mais nada.
+        O usuário não vai conseguir interagir com ela, mas o navegador / mecanismo de busca (Google) vai saber da onde ela foi
+        retirada / origem, através do link colocado nela.-->
+        <h2>Abreviações</h2>
+        <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+        <h2>Texto invertido</h2>
+        <p><bdo dir="rtl">Esse texto deve ser lido da direita para a esquerda (right to left / rtl).</bdo></p>
+        <p><bdo dir="ltr">Esse texto deve ser lido da esquerda para a direita (left to right / ltr).</bdo></p>
+</body>
+</html> 

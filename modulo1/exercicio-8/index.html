@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Aprendendo com o Gustavo Guanabara</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video controls width="500" height="500"><!--É como um array, o navegador vai tentar reproduzir as tags na ordem, primeiro o mp4 e por último a tag P, o primeiro que ele conseguir ele para. Se o navegador não for compatível ocm nenhum desses formatos de vídeo, ele vai mostrar a mensagem na tag P-->
+        <source src="midia/meu-video.mp4" >
+        <source src="midia/meu-video.m4v">
+        <source src="midia/meu-video.webm">
+        <source src="midia/meu-video.ogv">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h2>Inserindo vídeos do YouTube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h2>Inserindo vídeos do Vimeo</h2><!--Tem o vimeo também que pode ser usado no lugar do YouTube, é pago mas posso controlar quem pode ver ou não o vídeo com mais detalhes.-->
+    <iframe src="https://player.vimeo.com/video/414300920?h=540e38a908&portrait=0" width="560" height="255" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <!--Quase todos os navegadores são compatíveis com esses formatos de vídeo: MP4/M4V (MP4 e M4V são a praticamente a mesma coisa) WEBM e OGV (OGV não funciona no safari, ou seja, quem usa iphone não vai ver o vídeo se for nesse formato)-->
+</body><!--Software "HandBrake" é ótimo para converter vídeos para um formato ou somente diminuir o tamanho dele, assim ele fica leve para ser reproduzido em uma página HTML.-->
+</html><!--Dica: Nunca hospede vídeos (Hospedagem local) acima de 1080p em seu próprio site, o preço da hospedagem vai ser a de um rim se fizer isso.-->
