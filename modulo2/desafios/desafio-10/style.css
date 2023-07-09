@@ -27,13 +27,13 @@ header{
 
 .titulo-header > h1{
     color: white;
-    text-shadow: 2px 3px 7px black;
+    text-shadow: 2px 2px 4px #474646;
     margin-bottom: 25px;
 }
 
 .titulo-header > p{
     color: #dbcdcd;
-    text-shadow: 2px 3px 7px black;
+    text-shadow: 2px 2px 4px #474646;
 }
 
 nav{
@@ -53,7 +53,7 @@ main{
     width: 80%;
     height: auto;
     padding: 15px;
-    box-shadow: 2px 2px 10px black;
+    box-shadow: 2px 2px 10px #474646;
     border-radius: 8px;
 }
 
@@ -62,8 +62,15 @@ main{
     flex-direction: column;
 }
 
+.conteudo > h1{
+    color: #145230;
+    margin-bottom: 10px;
+}
+
 .conteudo > p{
     text-align: justify;
+    text-indent: 30px;
+    margin-bottom: 10px;
 }
 
 .destaque{
