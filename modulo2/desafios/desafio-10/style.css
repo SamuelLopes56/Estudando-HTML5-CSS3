@@ -1,6 +1,4 @@
-.titulo-header{
-    text-align: center;
-}
+@charset "utf-8";
 
 *{
     margin: 0;
@@ -24,6 +22,11 @@ header{
     background-image: linear-gradient(to bottom, #3CD983, #2FA966, #1A5C38);
     padding: 18px;
 }
+
+.titulo-header{
+    text-align: center;
+}
+
 
 .titulo-header > h1{
     color: white;
@@ -57,6 +60,10 @@ main{
     border-radius: 8px;
 }
 
+a{
+    text-decoration: none;
+}
+
 .conteudo{
     display: flex;
     flex-direction: column;
@@ -73,7 +80,17 @@ main{
     margin-bottom: 10px;
 }
 
-.destaque{
+.destaque-h1{
+    background-color: #2FA966;
+    background-image: linear-gradient(to right, #C8ECD8, #E8F7ED, #FBFEFC);
+}
+
+.destaque-main{
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.destaque-footer{
     color: #fffbfb;
 }
 
