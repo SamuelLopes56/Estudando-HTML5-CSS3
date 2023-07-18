@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #84E1AD;
+    position: relative;
+    min-height: 100%;
+    box-sizing: inherit;
+    padding-bottom: 60px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #3CD983, #2FA966, #1A5C38);
+    padding: 18px;
+}
+
+.titulo-header {
+    text-align: center;
+}
+
+
+.titulo-header>h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #474646;
+    margin-bottom: 25px;
+}
+
+.titulo-header>p {
+    color: #dbcdcd;
+    text-shadow: 2px 2px 4px #474646;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+nav>a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    box-shadow: 2px 2px 10px #474646;
+    border-radius: 8px;
+}
+
+.artigo {
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo>h1 {
+    color: #145230;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.conteudo>p {
+    text-align: justify;
+    text-indent: 30px;
+    margin-bottom: 10px;
+}
+
+.destaque-h1 {
+    background-color: #2FA966;
+    background-image: linear-gradient(to right, #C8ECD8, #E8F7ED, #FBFEFC);
+}
+
+.destaque-main {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.conteudo>img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.video {
+    text-align: center;
+    background-color: #1A5C38;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.extra {
+    background-color: #C5EBD6;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.extra>h2 {
+    background-color: #2FA866;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 10px;
+}
+
+.extra>p {
+    text-align: justify;
+    text-indent: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 6px;
+    background-color: #1A5C38;
+    text-align: center;
+    color: #dbcdcd;
+}
+
+.destaque-footer {
+    color: #fffbfb;
+}
