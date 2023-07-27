@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+}
+
+td{
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+thead > tr > td, .destaque{
+    background-color: rgb(133, 128, 128);
+    color: white;
+}
